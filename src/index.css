@@ -1,24 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Regular";
-  src: url("/fonts/regular.ttf");
-}
-
-@font-face {
-  font-family: "Medium";
-  src: url("/fonts/medium.ttf");
-}
-
-@font-face {
-  font-family: "SemiBold";
-  src: url("/fonts/semibold.ttf");
-}
-
-@font-face {
-  font-family: "Bold";
-  src: url("/fonts/bold.ttf");
-}
 
 :root {
   --bg: #F8F8F8;
