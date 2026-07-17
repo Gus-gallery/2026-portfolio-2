@@ -1,12 +1,30 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Regular";
+  src: url("/fonts/regular.ttf");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("/fonts/medium.ttf");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url("/fonts/semibold.ttf");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("/fonts/bold.ttf");
+}
+
 :root {
-  --text: #747474;
-  --text-h: #212121;
-  --bg: #fff;
-  --sans: system-ui, 'Segoe UI', "Helvetica Neue", sans-serif;
-  --heading: system-ui, 'Segoe UI', "Helvetica Neue", sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --bg: #F8F8F8;
+  --text: #505050;
+  --sans: system-ui, 'Segoe UI', Helvetica, sans-serif;
+  --heading: system-ui, 'Segoe UI', Helvetica, sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -21,4 +39,22 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+
+@theme {
+  --color-primary: #F8F8F8;
+  --color-secondary: #505050;
+  --color-backgroundsecondary: #363c49;
+  --color-square-blue: #566473;
+  --color-square-red: #735656;
+  --color-square-green: #567363;
+  --color-square-yellow: #736D56;
+  --font-regular: "Regular";
+  --font-medium: "Medium";
+  --font-semibold: "SemiBold";
+  --font-bold: "Bold";
+}
+
+.nav-button {
+  @apply text-primary w-30 md:w-40 h-12 font-light px-4 py-2 rounded-sm hover:cursor-pointer hover:saturate-300 hover:scale-105 transition-all duration-200 ease-in-out;
 }
