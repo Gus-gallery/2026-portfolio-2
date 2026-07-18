@@ -30,7 +30,7 @@ function App() {
             </button>
           </div>
           
-        <Contact greenIsOpen={greenIsOpen} onClose={() => setGreenIsOpen(false)}/>
+        <Contact className="overflow-hidden" greenIsOpen={greenIsOpen} onClose={() => setGreenIsOpen(false)}/>
         </div>
     </main>
   )
