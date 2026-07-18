@@ -1,10 +1,10 @@
 import { X } from 'lucide-react'
 
-const Contact = ({ greenIsOpen, onClose }) => {
+const Contact = ({ yellowIsOpen, onClose }) => {
   return (
     <div
-      className={`fixed right-8 bottom-0 h-60 w-44 md: md:w-60 saturate-300 bg-square-green text-primary rounded-t-md shadow-lg shadow-square-green/50 transition-all duration-400 ease-in-out ${
-        greenIsOpen
+      className={`fixed right-8 bottom-0 h-60 w-44 md: md:w-60 saturate-300 bg-square-yellow text-primary rounded-t-md shadow-lg shadow-square-green/50 transition-all duration-400 ease-in-out ${
+        yellowIsOpen
           ? 'translate-y-0 pointer-events-auto visible'
           : 'translate-y-full pointer-events-none invisible'
       }`}
