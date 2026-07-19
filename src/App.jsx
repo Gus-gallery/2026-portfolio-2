@@ -13,7 +13,7 @@ function App() {
     <main>
       <div className="flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-xl md:text-3xl font-light">Gustav Campbell Werdelin</h1>
-        <h2 className="text-xs md:text-lg font-light text-gray-400">stud.cand.it at IT University of Copenhagen</h2>
+        <h2 className="text-xs md:text-lg font-light tracking-normal text-gray-400">stud.cand.it at IT University of Copenhagen</h2>
           <div className="flex flex-row items-center justify-center pt-4 gap-4">
             <button onClick={() => setRedIsOpen(!redIsOpen)} className="bg-square-red text-md nav-button">
               Projects

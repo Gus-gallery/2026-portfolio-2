@@ -10,18 +10,18 @@ const Education = ({ greenIsOpen, onClose }) => {
       }`}
     >
       <div className="p-4 flex flex-row items-start justify-between w-full">
-        <h1 className="text-md md:text-xl font-medium">Education</h1>
+        <h1 className="text-md md:text-xl font-semibold">Education</h1>
         <X onClick={onClose} className="text-primary hover:cursor-pointer transition-all rounded-full hover:text-stone-800 hover:rotate-90 ease-in-out duration-200 hover:scale-110"/>
       </div>
 
       <div className="p-4 flex flex-col items-left justify-left -mt-4 ">
-          <h2 className="text-sm md:text-md font-bold">
+          <h2 className="text-sm md:text-md font-medium">
             Master's degree
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
             Currently pursuing a Master's degree in Software Design, IT University of Copenhagen (2026-2028)
           </p>
-          <h2 className="text-sm md:text-md font-bold">
+          <h2 className="text-sm md:text-md font-medium">
             Bachelor's degree
           </h2>
           <p className="text-sm md:text-md font-light">

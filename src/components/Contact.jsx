@@ -10,7 +10,7 @@ const Contact = ({ yellowIsOpen, onClose }) => {
       }`}
     >
       <div className="p-4 flex flex-row items-start justify-between w-full">
-        <h1 className="text-md md:text-xl font-medium">Contact</h1>
+        <h1 className="text-md md:text-xl font-semibold">Contact</h1>
         <X onClick={onClose} className="text-primary hover:cursor-pointer transition-all rounded-full hover:text-stone-800 hover:rotate-90 ease-in-out duration-200 hover:scale-110"/>
       </div>
 
