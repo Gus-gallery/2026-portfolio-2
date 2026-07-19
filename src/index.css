@@ -24,6 +24,7 @@
 
 @theme {
   --color-primary: #F8F8F8;
+  --color-primary-2: #e0e0e0;
   --color-secondary: #505050;
   --color-backgroundsecondary: #363c49;
   --color-square-blue: #566473;
@@ -33,5 +34,5 @@
 }
 
 .nav-button {
-  @apply text-primary w-30 md:w-40 h-12 font-light px-4 py-2 rounded-sm hover:cursor-pointer hover:saturate-300 hover:scale-105 transition-all duration-200 ease-in-out;
+  @apply text-primary w-34 md:w-42 h-12 font-light px-4 py-2 rounded-sm hover:cursor-pointer hover:saturate-300 hover:scale-105 transition-all duration-200 ease-in-out;
 }
