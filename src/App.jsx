@@ -1,6 +1,7 @@
 import './index.css'
 import { useState } from 'react'
 import Contact from './components/Contact'
+import Education from './components/Education'
 
 function App() {
   const [greenIsOpen, setGreenIsOpen] = useState(false)
@@ -29,9 +30,9 @@ function App() {
               Contact
             </button>
           </div>
-          
-        <Contact className="overflow-hidden" yellowIsOpen={yellowIsOpen} onClose={() => setYellowIsOpen(false)}/>
         </div>
+        <Contact className="overflow-hidden" yellowIsOpen={yellowIsOpen} onClose={() => setYellowIsOpen(false)}/>
+        <Education className="overflow-hidden" greenIsOpen={greenIsOpen} onClose={() => setGreenIsOpen(false)}/>
     </main>
   )
 }
