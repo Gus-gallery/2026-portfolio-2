@@ -13,7 +13,10 @@ function App() {
 
   return (
     <main>
-      <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className={`flex flex-col items-center justify-center min-h-screen transition-all ease-in-out duration-400 ${
+    blueIsOpen || redIsOpen || greenIsOpen
+      ? 'pb-129 md:pb-80'
+      : 'pt-0 md:pt-0'}`}>
         <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
         <h2 className="text-sm md:text-lg font-medium tracking-normal text-gray-400">stud.cand.it at IT University of Copenhagen</h2>
           <div className="flex flex-row items-center justify-center pt-4 gap-4">
@@ -33,16 +36,19 @@ function App() {
             </button>
           </div>
 
-        <div>
-          <button onClick={() => {
-            setGreenIsOpen(!greenIsOpen)
-            setRedIsOpen(!redIsOpen)
-            setBlueIsOpen(!blueIsOpen)
-            setYellowIsOpen(!yellowIsOpen)
-          }} className="fixed bottom-4 right-32 left-32 md:right-92 md:left-92 bg-primary-2/50 md:bg-primary text-primary px-4 py-2 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200 mt-20">
-            Toggle All
-          </button>
-        </div>
+
+        { greenIsOpen && yellowIsOpen && redIsOpen && blueIsOpen && (
+          <div>
+            <button onClick={() => {
+              setGreenIsOpen(!greenIsOpen)
+              setRedIsOpen(!redIsOpen)
+              setBlueIsOpen(!blueIsOpen)
+              setYellowIsOpen(!yellowIsOpen)
+            }} className="fixed top-40 md:-top-16 left-1/2 -translate-x-1/2 w-40 md:items-center justify-center bg-gray-600 md:bg-primary-2 text-primary px-4 py-2 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200 mt-20">
+              Close All
+            </button>
+          </div>
+        )}
 
         </div>
         <Education className="overflow-hidden" greenIsOpen={greenIsOpen} onClose={() => setGreenIsOpen(false)}/>

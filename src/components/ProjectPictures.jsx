@@ -39,11 +39,14 @@ const pictures = [
 
 const ProjectCard = ({ title, imageSrc, link, description }) => {
   return (
-    <div href={link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-left justify-left gap-2 cursor-pointer bg-black/20 p-4">
+    <a href={link} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex flex-col items-start justify-start gap-2 cursor-pointer bg-black/20 p-4">
       <h2 className="text-sm md:text-md text-primary font-semibold">{title}</h2>
       <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
         <p className="text-sm md:text-md font-light text-left">{description}</p>
-    </div>
+    </a>
   )
 }
 

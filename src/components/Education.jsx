@@ -3,10 +3,10 @@ import { X } from 'lucide-react'
 const Education = ({ greenIsOpen, onClose }) => {
   return (
     <div
-      className={`fixed left-0 bottom-12 h-85 w-80 md:w-92 md:h-77 saturate-300 bg-square-green text-primary rounded-r-md shadow-lg transition-all duration-400 ease-in-out ${
+      className={`fixed right-0 bottom-12 h-85 w-80 md:w-92 md:h-77 saturate-300 bg-square-green text-primary rounded-l-md shadow-lg transition-all duration-400 ease-in-out ${
         greenIsOpen
           ? 'translate-x-0 pointer-events-auto visible'
-          : '-translate-x-full pointer-events-none invisible'
+          : 'translate-x-full pointer-events-none invisible'
       }`}
     >
       <div className="p-4 flex flex-row items-start justify-between w-full border-b border-primary-2">
