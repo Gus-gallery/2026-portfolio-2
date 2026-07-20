@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
+import Projects from './components/Projects'
 
 function App() {
   const [greenIsOpen, setGreenIsOpen] = useState(false)
@@ -34,6 +35,7 @@ function App() {
         </div>
         <Education className="overflow-hidden" greenIsOpen={greenIsOpen} onClose={() => setGreenIsOpen(false)}/>
         <Experience className="overflow-hidden" blueIsOpen={blueIsOpen} onClose={() => setBlueIsOpen(false)}/>
+        <Projects className="overflow-hidden" redIsOpen={redIsOpen} onClose={() => setRedIsOpen(false)}/>
         <Contact className="overflow-hidden" yellowIsOpen={yellowIsOpen} onClose={() => setYellowIsOpen(false)}/>
 
     </main>
