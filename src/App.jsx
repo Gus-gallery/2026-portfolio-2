@@ -32,12 +32,23 @@ function App() {
               Contact
             </button>
           </div>
+
+        <div>
+          <button onClick={() => {
+            setGreenIsOpen(!greenIsOpen)
+            setRedIsOpen(!redIsOpen)
+            setBlueIsOpen(!blueIsOpen)
+            setYellowIsOpen(!yellowIsOpen)
+          }} className="fixed bottom-4 right-32 left-32 md:right-92 md:left-92 bg-primary-2/50 md:bg-primary text-primary px-4 py-2 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200 mt-20">
+            Toggle All
+          </button>
+        </div>
+
         </div>
         <Education className="overflow-hidden" greenIsOpen={greenIsOpen} onClose={() => setGreenIsOpen(false)}/>
         <Experience className="overflow-hidden" blueIsOpen={blueIsOpen} onClose={() => setBlueIsOpen(false)}/>
         <Projects className="overflow-hidden" redIsOpen={redIsOpen} onClose={() => setRedIsOpen(false)}/>
         <Contact className="overflow-hidden" yellowIsOpen={yellowIsOpen} onClose={() => setYellowIsOpen(false)}/>
-
     </main>
   )
 }

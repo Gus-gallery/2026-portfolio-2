@@ -3,7 +3,7 @@ import { X } from 'lucide-react'
 const Experience = ({ blueIsOpen, onClose }) => {
   return (
     <div
-      className={`fixed right-0 top-24 h-109 w-88 md:w-120 md:h-95 bg-square-blue saturate-300 text-primary rounded-l-md shadow-lg transition-all duration-400 ease-in-out ${
+      className={`fixed right-0 top-24 h-110 w-80 md:w-120 md:h-91 bg-square-blue saturate-300 text-primary rounded-l-md shadow-lg transition-all duration-400 ease-in-out ${
         blueIsOpen
           ? 'translate-x-0 pointer-events-auto visible'
           : 'translate-x-full pointer-events-none invisible'
@@ -16,10 +16,10 @@ const Experience = ({ blueIsOpen, onClose }) => {
 
       <div className="p-4 flex flex-col items-left justify-left text-primary-2">
           <h2 className="text-sm md:text-md text-primary font-medium">
-            Retshjælpen Rusk
+            Website Development
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
-            Developed website for Retshjælpen Rusk, a non-profit organization that helps people with legal issues. 2026.
+            Began working as a freelance website developer in 2026.
           </p>
           <h2 className="text-sm md:text-md text-primary font-medium">
             Minor Gallery
