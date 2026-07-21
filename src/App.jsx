@@ -15,8 +15,11 @@ function App() {
   return (
     <main>
       <div className={`flex flex-col items-center justify-center min-h-screen transition-all ease-in-out duration-400 
-      ${ blueIsOpen || greenIsOpen
-      ? 'pb-129 md:pb-80 xl:pb-0'
+      ${ blueIsOpen 
+      ? 'pb-120 md:pb-80 xl:pb-0'
+      : 'pt-0 md:pt-0'}
+      ${ greenIsOpen
+       ? 'pb-100 md:pb-80 xl:pb-0'
       : 'pt-0 md:pt-0'}
       ${ redIsOpen
        ? 'pb-80 md:pb-80 xl:pb-80'
