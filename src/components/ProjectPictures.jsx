@@ -42,10 +42,11 @@ const ProjectCard = ({ title, imageSrc, link, description }) => {
     <a href={link} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="flex flex-col items-start justify-start gap-2 cursor-pointer bg-black/20 p-4">
+    className="flex flex-col items-start justify-start cursor-pointer p-4 gap-1">
+      
       <h2 className="text-sm md:text-md text-primary font-semibold">{title}</h2>
-      <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
-        <p className="text-sm md:text-md font-light text-left">{description}</p>
+      <img src={imageSrc} alt={title} className="w-full h-full rounded-sm object-cover" />
+      <p className="text-sm md:text-md font-light text-left">{description}</p>
     </a>
   )
 }

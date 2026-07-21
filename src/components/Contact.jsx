@@ -3,10 +3,10 @@ import { X } from 'lucide-react'
 const Contact = ({ yellowIsOpen, onClose }) => {
   return (
     <div
-      className={`fixed right-5 md:right-8 top-0 h-34 w-48 md:h-60 md:w-60 saturate-300 bg-square-yellow text-primary rounded-b-md shadow-lg transition-all duration-400 ease-in-out ${
+      className={`fixed right-0 top-68 md:right-8 md:top-0 h-34 w-48 md:h-60 md:w-60 saturate-300 bg-square-yellow text-primary rounded-l-md md:rounded-l-none md:rounded-b-md shadow-lg transition-all duration-400 ease-in-out ${
         yellowIsOpen
-          ? 'translate-y-0 pointer-events-auto visible'
-          : '-translate-y-full pointer-events-none invisible'
+          ? 'translate-x-0 md:translate-y-0 pointer-events-auto visible'
+          : 'translate-x-full md:translate-x-0 md:-translate-y-full pointer-events-none invisible'
       }`}
     >
       <div className="flex flex-col h-full w-full">

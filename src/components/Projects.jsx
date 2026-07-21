@@ -4,7 +4,7 @@ import ProjectPictures from './ProjectPictures'
 const Projects = ({ redIsOpen, onClose }) => {
   return (
     <div
-      className={`fixed bottom-0 left-5 right-5 md:left-40 h-88 w-88 md:w-132 md:h-100  overflow-scroll bg-[#954d4d] text-primary rounded-t-md shadow-lg transition-all duration-400 ease-in-out ${
+      className={`fixed bottom-0 left-5 right-5 md:left-40 h-84 w-88 md:w-lg md:h-98  overflow-scroll bg-[#954d4d] text-primary rounded-t-md shadow-lg transition-all duration-400 ease-in-out ${
         redIsOpen
           ? 'translate-y-0 pointer-events-auto visible'
           : 'translate-y-full pointer-events-none invisible'

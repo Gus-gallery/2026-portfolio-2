@@ -3,7 +3,7 @@ import { X } from 'lucide-react'
 const Experience = ({ blueIsOpen, onClose }) => {
   return (
     <div
-      className={`fixed left-0 bottom-16 md:bottom-28 h-110 w-72 md:w-104 md:h-91 bg-square-blue saturate-300 text-primary rounded-r-md shadow-lg transition-all duration-400 ease-in-out ${
+      className={`fixed left-0 bottom-12 md:bottom-28 h-110 w-72 md:w-102 md:h-91 bg-square-blue saturate-300 text-primary rounded-r-md shadow-lg transition-all duration-400 ease-in-out ${
         blueIsOpen
           ? 'translate-x-0 pointer-events-auto visible'
           : '-translate-x-full pointer-events-none invisible'

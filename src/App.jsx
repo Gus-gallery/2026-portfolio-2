@@ -1,5 +1,6 @@
 import './index.css'
 import { useState } from 'react'
+import { X } from 'lucide-react'
 import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
@@ -13,10 +14,17 @@ function App() {
 
   return (
     <main>
-      <div className={`flex flex-col items-center justify-center min-h-screen transition-all ease-in-out duration-400 ${
-    blueIsOpen || redIsOpen || greenIsOpen
-      ? 'pb-129 md:pb-80'
-      : 'pt-0 md:pt-0'}`}>
+      <div className={`flex flex-col items-center justify-center min-h-screen transition-all ease-in-out duration-400 
+      ${ blueIsOpen || greenIsOpen
+      ? 'pb-129 md:pb-80 xl:pb-0'
+      : 'pt-0 md:pt-0'}
+      ${ redIsOpen
+       ? 'pb-80 md:pb-80 xl:pb-80'
+      : 'pt-0 md:pt-0'}
+      ${ yellowIsOpen
+       ? 'pb-129 md:pb-0 xl:pb-0'
+      : 'pt-0 md:pt-0'}
+      `}>
         <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
         <h2 className="text-sm md:text-lg font-medium tracking-normal text-gray-400">stud.cand.it at IT University of Copenhagen</h2>
           <div className="flex flex-row items-center justify-center pt-4 gap-4">
@@ -44,8 +52,8 @@ function App() {
               setRedIsOpen(!redIsOpen)
               setBlueIsOpen(!blueIsOpen)
               setYellowIsOpen(!yellowIsOpen)
-            }} className="fixed top-40 md:-top-16 left-1/2 -translate-x-1/2 w-40 md:items-center justify-center bg-gray-600 md:bg-primary-2 text-primary px-4 py-2 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200 mt-20">
-              Close All
+            }} className="fixed top-61 md:top-4 md:left-4 md:translate-x-0 left-1/2 -translate-x-1/2 w-34 md:items-center justify-center bg-gray-500 text-primary px-4 py-2.5 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200">
+              <X className="inline-block" />
             </button>
           </div>
         )}
