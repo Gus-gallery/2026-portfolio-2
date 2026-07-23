@@ -10,15 +10,16 @@ const Projects = ({ redIsOpen, onClose }) => {
           : 'translate-y-full pointer-events-none invisible'
       }`}
     >
-      <div className="p-4 flex flex-row items-start justify-between w-full border-b border-primary-2">
+      <div className="p-4 sticky top-0 flex flex-row items-start justify-between w-full border-b bg-[#954d4d] border-primary-2">
         <h1 className="text-md md:text-xl font-semibold">Projects</h1>
         <X onClick={onClose} className="text-primary hover:cursor-pointer transition-all rounded-full hover:text-stone-800 hover:rotate-90 ease-in-out duration-200 hover:scale-110 md:translate-y-1"/>
       </div>
 
-      <div className="p-4 flex flex-col items-left justify-left text-primary-2">
+      <div className=" flex flex-col items-left justify-left text-primary-2">
           <ProjectPictures />
       </div>
-      <div onClick={onClose} className="p-4 text-center bg-black/50 text-primary-2 cursor-pointer hover:font-bold hover:bg-black/60 transition-all duration-200 ease-in-out">
+
+      <div onClick={onClose} className="p-4 text-center bg-black/30 text-primary-2 cursor-pointer hover:font-bold hover:bg-black/60 transition-all duration-200 ease-in-out">
         <p className="underline">Close</p>
       </div>
     </div>
