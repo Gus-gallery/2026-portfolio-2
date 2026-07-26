@@ -19,19 +19,19 @@ const Contact = ({ yellowIsOpen, onClose }) => {
             <div className="p-1 md:p-0 w-12 h-12 invert brightness-0
             hover:scale-110 transition-all ease-in-out duration-200 cursor-pointer">
               <a href="https://github.com/Gus-gallery" target="_blank" rel="noopener noreferrer">
-                <img src="/socials/git.png" alt="Github"/>
+                <img src="/2026-portfolio-2/socials/git.png" alt="Github"/>
               </a>
             </div>
             <div className="p-1 md:p-0 w-12 h-12 invert brightness-0
             hover:scale-110 transition-all ease-in-out duration-200 cursor-pointer">
               <a href="https://github.com/Gus-gallery" target="_blank" rel="noopener noreferrer">
-                <img src="/socials/mail.png" alt="E-mail"/>
+                <img src="/2026-portfolio-2/socials/mail.png" alt="E-mail"/>
               </a>
             </div>    
             <div className="p-1 md:p-0 w-12 h-12 invert brightness-0
             hover:scale-110 transition-all ease-in-out duration-200 cursor-pointer">
               <a href="https://www.linkedin.com/in/gustav-werdelin-677785394/" target="_blank" rel="noopener noreferrer">
-                <img src="/socials/link.png" alt="LinkedIn"/>
+                <img src="/2026-portfolio-2/socials/link.png" alt="LinkedIn"/>
               </a>
             </div>
         </div>

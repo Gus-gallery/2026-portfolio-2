@@ -19,7 +19,7 @@ const Projects = ({ redIsOpen, onClose }) => {
           <ProjectPictures />
       </div>
 
-      <div onClick={onClose} className="p-4 text-center bg-black/30 text-primary-2 cursor-pointer hover:font-bold hover:bg-black/60 transition-all duration-200 ease-in-out">
+      <div onClick={onClose} className="p-4 mt-8 text-center bg-black/30 text-primary-2 cursor-pointer hover:font-bold hover:bg-black/60 transition-all duration-200 ease-in-out">
         <p className="underline">Close</p>
       </div>
     </div>

@@ -55,7 +55,7 @@ function App() {
               setRedIsOpen(!redIsOpen)
               setBlueIsOpen(!blueIsOpen)
               setYellowIsOpen(!yellowIsOpen)
-            }} className="fixed top-61 md:top-4 md:left-4 md:translate-x-0 left-1/2 -translate-x-1/2 w-34 md:items-center justify-center bg-gray-500 text-primary px-4 py-2.5 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200">
+            }} className="fixed top-61 md:top-4 md:left-4 md:translate-x-0 left-1/2 -translate-x-1/2 w-34 md:items-center justify-center bg-gray-400 text-primary px-4 py-2.5 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200">
               <X className="inline-block" />
             </button>
           </div>
