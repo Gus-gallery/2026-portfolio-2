@@ -14,12 +14,12 @@ function App() {
 
   return (
     <main>
-      <div className={`flex flex-col items-center justify-center min-h-screen transition-all ease-in-out duration-400 
+      <div className={`flex flex-col items-center justify-center min-h-dvh transition-all ease-in-out duration-400 
       ${ blueIsOpen 
       ? 'pb-120 md:pb-80 xl:pb-0'
       : 'pt-0 md:pt-0'}
       ${ greenIsOpen
-       ? 'pb-96 md:pb-80 xl:pb-0'
+       ? 'pb-92 md:pb-80 xl:pb-0'
       : 'pt-0 md:pt-0'}
       ${ redIsOpen
        ? 'pb-80 md:pb-80 xl:pb-80'
