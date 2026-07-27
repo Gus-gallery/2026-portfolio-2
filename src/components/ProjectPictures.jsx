@@ -3,35 +3,35 @@ const pictures = [
     {
     id: 0,
     title: "Retshjælpen Rusk",
-    imageSrc: "/2026-portfolio-2/projectPics/ru.png",
+    imageSrc: "/projectPics/ru.png",
     link: "https://rusk-website.vercel.app/",
     description: "Website for Retshjælpen Rusk, a non-profit organization that helps people with legal issues."
   },
   {
     id: 1,
     title: "Anglerfish",
-    imageSrc: "/2026-portfolio-2/projectPics/an.png",
+    imageSrc: "/projectPics/an.png",
     link: "https://anglerfish-kappa.vercel.app/",
     description: "A social media platform for anglers to share their catches, tips, and experiences."
   },
   {
     id: 2,
     title: "Oskar Peitersen Photo",
-    imageSrc: "/2026-portfolio-2/projectPics/os.png",
+    imageSrc: "/projectPics/os.png",
     link: "https://gus-gallery.github.io/ozzy_home/",
     description: "Photography portfolio website made for a good friend of mine."
   },
   {
     id: 3,
     title: "gw.læder",
-    imageSrc: "/2026-portfolio-2/projectPics/gw.png",
+    imageSrc: "/projectPics/gw.png",
     link: "https://gus-gallery.github.io/gwl-der_site/",
     description: "Website made for my personal bespoke leather goods business."
   },
   {
     id: 4,
     title: "Nordfor Byggerådgivning",
-    imageSrc: "/2026-portfolio-2/projectPics/no.png",
+    imageSrc: "/projectPics/no.png",
     link: "https://gus-gallery.github.io/nordfor_byg/",
     description: "Website created for a private construction consultant."
   },
