@@ -16,28 +16,28 @@ const Experience = ({ blueIsOpen, onClose }) => {
 
       <div className="p-4 flex flex-col items-left justify-left text-primary-2">
           <h2 className="text-sm md:text-md text-primary font-medium">
-            Website Development
+            Website Development (2026)
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
-            Freelance website development. 2026.
+            Freelance website development. 
           </p>
           <h2 className="text-sm md:text-md text-primary font-medium">
-            Minor Gallery
+            Minor Gallery (2023-2025)
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
-            Co-founder and co-owner of Minor Gallery, an art gallery in Nørrebro, Copenhagen. 2023-2025.          
+            Co-founder and co-owner of Minor Gallery, an art gallery in Nørrebro, Copenhagen.          
           </p>
           <h2 className="text-sm md:text-md text-primary font-medium">
-            Hermés
+            Hermés (2020 and 2022)
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
-            Assistant working for the designer at Hermés in Amsterdam 2020 and Barcelona 2022.
+            Assistant working for the designer at Hermés.
           </p>
           <h2 className="text-sm md:text-md text-primary font-medium">
-            gw.læder
+            gw.læder (2020-2023)
           </h2>
           <p className="text-sm md:text-md font-light">
-            Created my own leather goods brand, which makes bespoke & made to order goods. Created in 2020.
+            Created my own leather goods brand, which makes bespoke & made to order goods.
           </p>
       </div>
     </div>
