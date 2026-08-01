@@ -25,7 +25,7 @@ function App() {
        ? 'pb-80 md:pb-80 xl:pb-80'
       : 'pt-0 md:pt-0'}
       ${ yellowIsOpen
-       ? 'pb-129 md:pb-0 xl:pb-0'
+       ? 'pb-88 md:pb-0 xl:pb-0'
       : 'pt-0 md:pt-0'}
       `}>
         <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
@@ -55,7 +55,7 @@ function App() {
               setRedIsOpen(!redIsOpen)
               setBlueIsOpen(!blueIsOpen)
               setYellowIsOpen(!yellowIsOpen)
-            }} className="fixed top-61 md:top-4 md:left-4 md:translate-x-0 left-1/2 -translate-x-1/2 w-34 md:items-center justify-center bg-gray-400 text-primary px-4 py-2.5 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200">
+            }} className="hidden md:block md:fixed top-61 md:top-4 md:left-4 md:translate-x-0 left-1/2 -translate-x-1/2 w-34 md:items-center justify-center bg-gray-400 text-primary px-4 py-2.5 rounded-sm font-light hover:bg-gray-800 transition-colors duration-200">
               <X className="inline-block" />
             </button>
           </div>

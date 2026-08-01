@@ -3,7 +3,7 @@ import { X } from 'lucide-react'
 const Education = ({ greenIsOpen, onClose }) => {
   return (
     <div
-      className={`fixed right-0 bottom-6 h-85 w-96 md:w-96 md:h-86 saturate-300 bg-square-green text-primary rounded-l-md shadow-lg transition-all duration-400 ease-in-out ${
+      className={`fixed right-0 bottom-8 h-81 w-92 md:w-96 md:h-82 saturate-300 bg-square-green text-primary rounded-l-md shadow-lg transition-all duration-400 ease-in-out ${
         greenIsOpen
           ? 'translate-x-0 pointer-events-auto visible'
           : 'translate-x-full pointer-events-none invisible'
@@ -19,7 +19,7 @@ const Education = ({ greenIsOpen, onClose }) => {
             Cand. It. Software Design (2026-2028)
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
-            Currently pursuing a Master's degree in Software Design, with a focus on technical interaction design, IT University of Copenhagen.
+            Currently pursuing a Master's degree in Software Design, specializing intechnical interaction design, IT University of Copenhagen.
           </p>
           <h2 className="text-sm md:text-md text-primary font-medium">
             Digital Design & Communication (2025)
@@ -31,7 +31,7 @@ const Education = ({ greenIsOpen, onClose }) => {
             Bachelor of Arts in Art History (2022-2025)
           </h2>
           <p className="text-sm md:text-md font-light">
-            Spezialized in Minimalism and Contemporary Art with a focus on digital media and post-colonial studies, University of Copenhagen.
+            Specialized in Minimalism, Contemporary Art and post-colonial studies, University of Copenhagen.
           </p>
       </div>
     </div>
