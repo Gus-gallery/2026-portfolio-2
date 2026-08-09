@@ -16,7 +16,7 @@ const Education = ({ greenIsOpen, onClose }) => {
 
       <div className="p-4 flex flex-col items-left justify-left text-primary-2">
           <h2 className="text-sm md:text-md text-primary font-medium">
-            Cand. It. Software Design (2026-2028)
+            Cand.It Software Design (2026-2028)
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
             Currently pursuing a Master's degree in Software Design, specializing in technical interaction design, IT University of Copenhagen.

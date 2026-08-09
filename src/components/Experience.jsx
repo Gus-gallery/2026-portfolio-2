@@ -37,7 +37,7 @@ const Experience = ({ blueIsOpen, onClose }) => {
             gw.læder (2020-2023)
           </h2>
           <p className="text-sm md:text-md font-light">
-            Created my own leather goods brand, which makes bespoke & made to order goods.
+            Created my own leather goods brand, which makes bespoke & made to order leather products.
           </p>
       </div>
     </div>
