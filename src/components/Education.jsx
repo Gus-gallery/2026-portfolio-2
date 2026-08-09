@@ -19,7 +19,7 @@ const Education = ({ greenIsOpen, onClose }) => {
             Cand. It. Software Design (2026-2028)
           </h2>
           <p className="text-sm md:text-md font-light mb-4">
-            Currently pursuing a Master's degree in Software Design, specializing intechnical interaction design, IT University of Copenhagen.
+            Currently pursuing a Master's degree in Software Design, specializing in technical interaction design, IT University of Copenhagen.
           </p>
           <h2 className="text-sm md:text-md text-primary font-medium">
             Digital Design & Communication (2025)
