@@ -30,9 +30,12 @@ function App() {
        ? 'pb-88 md:pb-0 xl:pb-0'
       : 'pt-0 md:pt-0'}
       `}>
-        <div className="group flex flex-col items-center transition-all duration-200">
-          <div className="flex items-center md:pl-9.5 group-hover:pl-0 transition-all duration-200">
+        <div onClick={() => setIsExpanded(!isExpanded)} className="cursor-pointer group flex flex-col items-center transition-all duration-200">
+          <div className="flex items-center md:pl-9.5 transition-all duration-200">
             <div className="text-center">
+              <p className='md:hidden text-xs'>
+                Click my name
+              </p>
               <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
               <h2 className="text-sm md:text-lg font-medium text-gray-400">
                 stud.cand.it at IT University of Copenhagen
@@ -40,12 +43,11 @@ function App() {
             </div>
 
           <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="hidden md:flex cursor-pointer p-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              className="hidden md:flex p-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-400"
               aria-label={isExpanded ? 'hide info' : 'show info'}
             >
               <ArrowDown
-                className={`text-gray-300 transition-transform duration-200 ${
+                className={`text-gray-300 transition-transform duration-400 ${
                   isExpanded ? 'rotate-180' : ''
                 }`}
               />
@@ -53,10 +55,9 @@ function App() {
           </div>
 
           <div
-            className={`overflow-hidden cursor-pointer transition-all ease-in-out duration-300 ${
+            className={`overflow-hidden cursor-pointer transition-all ease-in-out duration-400 ${
               isExpanded ? 'max-h-80 opacity-100 mt-1' : 'max-h-0 opacity-0'
             }`}
-            onClick={() => setIsExpanded(!isExpanded)}
           >
             <p className="max-w-72 md:max-w-88 mx-auto text-gray-600 text-sm md:text-sm font-regular text-left">
               MSc student in Software Design at IT University of Copenhagen with a
