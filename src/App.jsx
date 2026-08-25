@@ -56,9 +56,9 @@ function App() {
               isExpanded ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
-            <p className="max-w-72 md:max-w-88 mx-auto mt-1 text-gray-600 text-sm md:text-sm font-regular text-left">
+            <p className="max-w-72 md:max-w-88 mx-auto mt-1 text-gray-600 text-xs md:text-sm font-regular text-left">
               MSc student in Software Design at IT University of Copenhagen with a
-              bachelor's degree in art history. I have a love for functionalist
+              bachelor's degree in art history. Lover of functionalist
               design and minimalism in art. I specialize in interactive programming
               and full-stack development. Based in Copenhagen, Denmark.
             </p>
