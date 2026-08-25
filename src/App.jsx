@@ -33,9 +33,6 @@ function App() {
         <div onClick={() => setIsExpanded(!isExpanded)} className="cursor-pointer group flex flex-col items-center transition-all duration-200">
           <div className="flex items-center md:pl-9.5 transition-all duration-200">
             <div className="text-center">
-              <p className='md:hidden text-xs'>
-                Click my name
-              </p>
               <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
               <h2 className="text-sm md:text-lg font-medium text-gray-400">
                 stud.cand.it at IT University of Copenhagen
@@ -56,10 +53,10 @@ function App() {
 
           <div
             className={`overflow-hidden cursor-pointer transition-all ease-in-out duration-400 ${
-              isExpanded ? 'max-h-80 opacity-100 mt-1' : 'max-h-0 opacity-0'
+              isExpanded ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
-            <p className="max-w-72 md:max-w-88 mx-auto text-gray-600 text-sm md:text-sm font-regular text-left">
+            <p className="max-w-72 md:max-w-88 mx-auto mt-1 text-gray-600 text-sm md:text-sm font-regular text-left">
               MSc student in Software Design at IT University of Copenhagen with a
               bachelor's degree in art history. I have a love for functionalist
               design and minimalism in art. I specialize in interactive programming
