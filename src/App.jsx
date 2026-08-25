@@ -31,10 +31,17 @@ function App() {
       : 'pt-0 md:pt-0'}
       `}>
         <div className="group flex flex-col items-center transition-all duration-200">
-          <div className="flex flex-col md:flex-row items-center md:pr-9.5 group-hover:pr-0 transition-all duration-200">
-            <button
+          <div className="flex items-center md:pl-9.5 group-hover:pl-0 transition-all duration-200">
+            <div className="text-center">
+              <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
+              <h2 className="text-sm md:text-lg font-medium text-gray-400">
+                stud.cand.it at IT University of Copenhagen
+              </h2>
+            </div>
+
+          <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="cursor-pointer p-2 -mb-2 md:mb-0 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              className="hidden md:flex cursor-pointer p-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200"
               aria-label={isExpanded ? 'hide info' : 'show info'}
             >
               <ArrowDown
@@ -43,24 +50,19 @@ function App() {
                 }`}
               />
             </button>
-            <div className="text-center">
-              <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
-              <h2 className="text-sm md:text-lg font-medium text-gray-400">
-                stud.cand.it at IT University of Copenhagen
-              </h2>
-            </div>
           </div>
 
           <div
-            className={`overflow-hidden transition-all duration-300 ${
-              isExpanded ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+            className={`overflow-hidden cursor-pointer transition-all ease-in-out duration-300 ${
+              isExpanded ? 'max-h-80 opacity-100 mt-1' : 'max-h-0 opacity-0'
             }`}
+            onClick={() => setIsExpanded(!isExpanded)}
           >
-            <p className="max-w-71.5 md:max-w-88 mx-auto bg-gray-400 rounded-sm p-2 text-xs md:text-sm font-extralight text-gray-100 text-left">
+            <p className="max-w-72 md:max-w-88 mx-auto text-gray-600 text-sm md:text-sm font-regular text-left">
               MSc student in Software Design at IT University of Copenhagen with a
               bachelor's degree in art history. I have a love for functionalist
               design and minimalism in art. I specialize in interactive programming
-              and full-stack development and I'm based in Copenhagen, Denmark.
+              and full-stack development. Based in Copenhagen, Denmark.
             </p>
           </div>
         </div>
