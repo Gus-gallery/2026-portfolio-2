@@ -1,6 +1,6 @@
 import './index.css'
 import { useState } from 'react'
-import { X } from 'lucide-react'
+import { X, ArrowDown} from 'lucide-react'
 import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
@@ -11,6 +11,8 @@ function App() {
   const [redIsOpen, setRedIsOpen] = useState(false)
   const [blueIsOpen, setBlueIsOpen] = useState(false)
   const [yellowIsOpen, setYellowIsOpen] = useState(false)
+
+  const [isExpanded, setIsExpanded] = useState(false)
 
   return (
     <main>
@@ -28,8 +30,43 @@ function App() {
        ? 'pb-88 md:pb-0 xl:pb-0'
       : 'pt-0 md:pt-0'}
       `}>
-        <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
-        <h2 className="text-sm md:text-lg font-medium tracking-normal text-gray-400">stud.cand.it at IT University of Copenhagen</h2>
+        <div className="group flex flex-col items-center transition-all duration-200">
+          <div className="flex flex-col md:flex-row items-center md:pr-9.5 group-hover:pr-0 transition-all duration-200">
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="cursor-pointer p-2 -mb-2 md:mb-0 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              aria-label={isExpanded ? 'hide info' : 'show info'}
+            >
+              <ArrowDown
+                className={`text-gray-300 transition-transform duration-200 ${
+                  isExpanded ? 'rotate-180' : ''
+                }`}
+              />
+            </button>
+            <div className="text-center">
+              <h1 className="text-2xl md:text-3xl font-medium">Gustav Campbell Werdelin</h1>
+              <h2 className="text-sm md:text-lg font-medium text-gray-400">
+                stud.cand.it at IT University of Copenhagen
+              </h2>
+            </div>
+          </div>
+
+          <div
+            className={`overflow-hidden transition-all duration-300 ${
+              isExpanded ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+            }`}
+          >
+            <p className="max-w-71.5 md:max-w-88 mx-auto bg-gray-400 rounded-sm p-2 text-xs md:text-sm font-extralight text-gray-100 text-left">
+              MSc student in Software Design at IT University of Copenhagen with a
+              bachelor's degree in art history. I have a love for functionalist
+              design and minimalism in art. I specialize in interactive programming
+              and full-stack development and I'm based in Copenhagen, Denmark.
+            </p>
+          </div>
+        </div>
+        
+        
+          
           <div className="flex flex-row items-center justify-center pt-4 gap-4">
             <button onClick={() => setRedIsOpen(!redIsOpen)} className="bg-square-red text-md nav-button">
               Projects
