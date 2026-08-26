@@ -40,11 +40,11 @@ function App() {
             </div>
 
           <button
-              className="hidden md:flex p-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-400"
+              className="hidden md:flex p-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               aria-label={isExpanded ? 'hide info' : 'show info'}
             >
               <ArrowDown
-                className={`text-gray-300 transition-transform duration-400 ${
+                className={`text-gray-300 transition-transform duration-300 ${
                   isExpanded ? 'rotate-180' : ''
                 }`}
               />
