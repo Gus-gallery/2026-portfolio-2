@@ -24,7 +24,7 @@ const Contact = ({ yellowIsOpen, onClose }) => {
             </div>
             <div className="p-1 md:p-0 w-12 h-12 invert brightness-0
             hover:scale-110 transition-all ease-in-out duration-200 cursor-pointer">
-              <a href="https://github.com/Gus-gallery" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:gustav.werdelin@gmail.com" target="_blank" rel="noopener noreferrer">
                 <img src="/socials/mail.png" alt="E-mail"/>
               </a>
             </div>    
