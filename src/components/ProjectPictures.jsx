@@ -4,7 +4,7 @@ const pictures = [
     id: 0,
     title: "Retshjælpen Rusk",
     imageSrc: "/projectPics/ru.png",
-    link: "https://rusk-website.vercel.app/",
+    link: "https://rusklaw.dk",
     description: "Website for Retshjælpen Rusk, a non-profit organization that helps people with legal issues."
   },
   {
