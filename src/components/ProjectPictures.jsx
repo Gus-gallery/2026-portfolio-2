@@ -12,7 +12,7 @@ const pictures = [
     title: "Anglerfish",
     imageSrc: "/projectPics/an.png",
     link: "https://anglerfish-kappa.vercel.app/",
-    description: "A social media platform for anglers to share their catches, tips, and experiences."
+    description: "A social media platform for anglers to share their catches, tips, and experiences. (Database is on pause)"
   },
   {
     id: 2,
